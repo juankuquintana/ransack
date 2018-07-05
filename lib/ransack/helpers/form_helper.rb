@@ -31,7 +31,7 @@ module Ransack
         options[:html].reverse_merge!(html_options)
         options[:builder] ||= FormBuilder
 
-        form_for(record, options, &proc)
+        form_with(record, options, &proc)
       end
 
       # +sort_link+
